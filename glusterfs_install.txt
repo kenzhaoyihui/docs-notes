@@ -1,0 +1,26 @@
+# Type: txt
+# System: Centos7
+# Glusterfs version: 3.8.5
+
+# Both nodes
+yum -y install centos-release-gluster && yum -y glusterfs*
+service glusterd start
+service glusterd status
+
+# parted disk && both nodes
+fdisk /dev/sdb --> n --> p --> Enter --> Enter --> Enter --> w
+mkfs.xfs -i size=512 -n size=8192 /dev/sdb1    # format
+mkdir -p /export/sdb1 && mount /dev/sdb1 /export/sdb1 && mkdir -p /export/sdb1/brick
+echo "/dev/sdb1 /export/sdb1 xfs defaults 0 0"  >> /etc/fstab
+
+# Configure the trusted pool && both nodes
+gluster peer probe <peer-ip>
+
+# Setup a Glusterfs volume && just a node
+gluster volume create gv0 replica 2 <node1-ip>:/export/sdb1/brick <node2-ip>:/export/sdb1/brick
+gluster start gv0
+gluster volume info
+
+# Testing the GlusterFS volume && any node is ok
+
+mount -t gluster <peer-ip>:/gv0 /mnt --> df -h
