@@ -22,5 +22,14 @@
 * 选择情景模式。
 
 # Reference
-[Referece][http://jingyan.baidu.com/article/11c17a2c121c0ff446e39d16.html]
+
+* [Referece](http://jingyan.baidu.com/article/11c17a2c121c0ff446e39d16.html)
+
+* Proxy-SwitchyOmega_v2.3.12.crx
+
+* OmegaOptions.bak
+
+* FoxyProxy.xml
+
+* FoxyProxy.xpi
 
