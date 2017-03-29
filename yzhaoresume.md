@@ -25,7 +25,7 @@
 * Bachelor of Science in Management Science, Major in Financial Management in NJUPT(Nanjing University of Posts and Telecommunications), 09/2014 - 06/2017
 
 ##  EXPERIENCE
-- *** RedHat(Beijing Raycom Office) Inc,  Intern in RHVH, 11/07/2016 - Present***
+- ** RedHat(Beijing Raycom Office) Inc,  Intern in RHVH, 11/07/2016 - Present**
  * Mainly responsible for Red Hat Enterprise Virtualization(RHVH) product Testing, bug reporting and tracking main features: HostedEngine, Cockpit-oVirt, executed tests on upstream for HostedEngine and Cockpit-ovirt
 
  * Followed up RHVH version 3.6, 4.0, 4.1 schedules, got experienced on testing workflow
@@ -36,7 +36,7 @@
  
  * Got familiar with OpenShift, Docker, Kubernetes technology. 
  
-- *** Child Rearing Inc(Nanjing city), Intern in Operation Engineer, 24/03/2016 - 24/06/2016***
+- ** Child Rearing Inc(Nanjing city), Intern in Operation Engineer, 24/03/2016 - 24/06/2016**
  * Responsible for the maintenance of the network, as well as the Web Service environment, LANMP environment deployment and maintenance; Docker environment, Kubernetes deployment and maintenance
  
  * Kickstart deployment profile
