@@ -53,6 +53,14 @@ func getSequence() func() int{
   }
 }
 
+type Circle struct {
+  radius float64
+}
+
+func (c Circle) getArea() float64{
+  return 3.14 * c.radius * c.radius
+}
+
 func main() {
 
   //fmt.Println('a')
@@ -174,4 +182,10 @@ func main() {
   nextNumber1 := getSequence()
   fmt.Println(nextNumber1())
   fmt.Println(nextNumber1())
+
+
+  // function method transp--
+  var c1 Circle
+  c1.radius = 10.00
+  fmt.Println("Area of Circle(c1) = ", c1.getArea())
 }
